@@ -8,10 +8,11 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 70px;
   min-width: 100vw;
   min-height: 100vh;
+  font-family: Roboto, sans-serif;
 }
 
 .center {
@@ -31,5 +32,10 @@ body {
 .verb h1 {
   font-size: 200px;
   text-align: center;
+}
+
+.verb h1 span:hover {
+  color:#D72201;
+  font-size: 50px
 }
 
