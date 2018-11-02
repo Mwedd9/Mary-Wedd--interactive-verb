@@ -23,17 +23,20 @@ body {
   width: auto;
 }
 
+.shape {
+  margin: 30px;
+  width: 200px;  
+  height: 100px;
+  background: blue;
+}
+
+
 .content {
   height: 100%;
   width: 100%;
   padding: 20px;
 }
 
-.shape {
-  margin: 30px;
-  width: 1000px;  
-  height: 100px;
-  background: navy;
 }
   .circle {
       width: 100px;
