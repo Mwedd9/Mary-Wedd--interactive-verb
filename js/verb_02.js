@@ -31,3 +31,19 @@ function randomFloat (min, max) {
   return parseFloat(value.toFixed(2));
 }
 
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
+
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+
+  return color;
+}
+
+var h = randomNumber(0, 359);
+
+var body = document.querySelector("body");
+body.style.background = hslColor(h, 50, 70);
+
+
