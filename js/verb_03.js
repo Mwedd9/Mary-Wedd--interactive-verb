@@ -38,7 +38,7 @@ function hslColor(h, s, l) {
   var saturation = s + "%";
   var luminance = l + "%";
 
-  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+  var color = "hsl(" + h + "," + s + "," + l + ")";
 
   return color;
 }
@@ -51,13 +51,13 @@ var container = document.querySelector(".content");
 
 
 // add 500 divs with the class "shape" to it
-for (var i = 0; i < 500; i++) {  
+for (var i = 0; i < 1000; i++) {  
   var shape = document.createElement('div');
   shape.classList.add('shape');
 
   // add a random animation duration and delay to each shape
-  shape.style.animationDelay = randomNumber(0, 5000) + 'ms';
-  shape.style.animationDuration = randomNumber(1000, 10000) + 'ms';
+  shape.style.animationDelay = randomNumber(0, 300) + 'ms';
+  shape.style.animationDuration = randomNumber(300, 300) + 'ms';
 
   container.appendChild(shape);
 }
